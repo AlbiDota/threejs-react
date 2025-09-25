@@ -1,6 +1,7 @@
 import React from 'react';
 import { Canvas } from "@react-three/fiber";
 import './App.css';
+import SphereTest from './3dModels/SphereTest';
 
 // fra youtube tutorial https://www.youtube.com/watch?v=jz-zBfTW2ew
 
@@ -20,10 +21,7 @@ function App() {
             {/* create scene and adjust camera angle */}
             <Scene>
                 {/* add objects */}
-                <mesh position={[0, 0, 0]}>
-                    <sphereGeometry args={[1, 64, 64]}></sphereGeometry>
-                    <meshStandardMaterial color="royalBlue" roughness={0.3} metalness={0.2}></meshStandardMaterial>
-                </mesh>
+                <SphereTest />
 
                 {/* add directional light */}
                 <directionalLight intensity={3}></directionalLight>
@@ -44,3 +42,12 @@ export default App;
         <meshNormalMaterial></meshNormalMaterial>
     </mesh>
 </Canvas> */}
+
+{/* <mesh position={[0, 0, 0]}>
+        <sphereGeometry args={[1, 64, 64]}/>
+        <meshStandardMaterial 
+        color="royalBlue" 
+        roughness={0.3} 
+        metalness={0.2}
+        />
+    </mesh> */}
