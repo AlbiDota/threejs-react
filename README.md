@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## ` npm install three @types/three @react-three/fiber`
+## ` npm install @react-three/drei`
 
 
 ## Available Scripts
